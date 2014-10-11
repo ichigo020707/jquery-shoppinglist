@@ -5,14 +5,6 @@ $(document).ready(function() {
 		$('input').val('');
 		}
 	});
-	/* $('input').on('click', function() {
-		$('input').val('');
-	}); */
-	/* $('input').on('keyup', function(event) {
-		if (event.which == 13) {
-		$('input').attr("placeholder", "Type List Item");
-		}
-	}); */
 	$('ul').on('click', 'li', function() {
 		if ($(this).hasClass('done')) {
 			$(this).removeClass('done');
@@ -24,8 +16,8 @@ $(document).ready(function() {
 	$('ul').on('dblclick', 'li', function() {
 		$(this).addClass('remove');
 	});
-	var list = document.querySelector('ul');
-	/* list.addEventListener('click', function(ev) {
+	/* var list = document.querySelector('ul');
+	list.addEventListener('click', function(ev) {
   	if( ev.target.tagName === 'LI') {
      	ev.target.classList.toggle('done');
   		}
